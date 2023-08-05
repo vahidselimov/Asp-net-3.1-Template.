@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20230805083425_Sabutaj.cs" />
+    <Compile Remove="Migrations\20230805083425_Sabutaj.Designer.cs" />
+    <Compile Remove="Migrations\20230805083532_Database.cs" />
+    <Compile Remove="Migrations\20230805083532_Database.Designer.cs" />
+    <Compile Remove="Migrations\20230805083814_CreateDatabase.cs" />
+    <Compile Remove="Migrations\20230805083814_CreateDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20230805084647_CreateDatabase.cs" />
+    <Compile Remove="Migrations\20230805084647_CreateDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20230805084850_UptadeDatabase.cs" />
+    <Compile Remove="Migrations\20230805084850_UptadeDatabase.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.32">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
